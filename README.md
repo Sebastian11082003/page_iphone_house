@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# iPhone House — Landing Page
 
-## Getting Started
+Landing page profesional para **iPhone House**, desarrollada con [AI Engineering OS](https://github.com) como metodología de trabajo.
 
-First, run the development server:
+## Estado del proyecto
+
+**Fase 0 — Análisis y documentación** (en curso)
+
+Ver [docs/PROJECT_STATE.md](docs/PROJECT_STATE.md) para el estado detallado.
+
+## Stack tecnológico
+
+| Tecnología | Versión |
+|-----------|---------|
+| Next.js | 16.2.10 |
+| React | 19.2.4 |
+| TypeScript | 5.x |
+| Tailwind CSS | 4.x |
+| shadcn/ui | base-nova |
+| Framer Motion | 12.x |
+
+## Inicio rápido
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build de producción
+npm run build
+
+# Lint
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estructura del proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+iphone-house/
+├── app/                  # App Router (layout, page, estilos)
+├── components/
+│   └── ui/               # Componentes shadcn/ui
+├── lib/                  # Utilidades y constantes
+├── docs/                 # Documentación del proyecto
+│   ├── PROJECT_STATE.md
+│   ├── vision.md
+│   ├── requirements/
+│   ├── architecture/
+│   └── roadmap.md
+├── CLAUDE.md             # Reglas de Orchestrator
+└── CHANGELOG.md
+```
 
-## Learn More
+## Documentación
 
-To learn more about Next.js, take a look at the following resources:
+| Documento | Descripción |
+|-----------|-------------|
+| [PROJECT_STATE](docs/PROJECT_STATE.md) | Estado actual del proyecto |
+| [Visión](docs/vision.md) | Objetivos y alcance del MVP |
+| [Requisitos funcionales](docs/requirements/functional-requirements.md) | RF del MVP |
+| [Requisitos no funcionales](docs/requirements/non-functional-requirements.md) | RNF de calidad |
+| [Arquitectura](docs/architecture/architecture-overview.md) | Diseño técnico |
+| [ADR-001](docs/architecture/adr/001-tech-stack.md) | Decisión de stack |
+| [Roadmap](docs/roadmap.md) | Plan por fases |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Metodología
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este proyecto sigue **AI Engineering OS**:
 
-## Deploy on Vercel
+- **Orchestrator** coordina el flujo de trabajo
+- **Landing Team** como equipo principal
+- Documentación obligatoria antes de implementación
+- Validación de calidad en cada fase
+- Trazabilidad de decisiones (ADR)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licencia
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proyecto privado — iPhone House.
