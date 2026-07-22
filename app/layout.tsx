@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     "AirPods",
     "MacBook",
   ],
+  icons: {
+    icon: [{ url: "/images/logo.png", type: "image/png" }],
+    apple: [{ url: "/images/logo.png", type: "image/png" }],
+    shortcut: "/images/logo.png",
+  },
   openGraph: {
     title: `${SITE.name} — ${SITE.tagline}`,
     description: SITE.description,
