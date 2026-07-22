@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/header";
 import { WhatsAppFloat } from "@/components/layout/whatsapp-float";
 import { Benefits } from "@/components/sections/benefits";
+import { Catalog } from "@/components/sections/catalog";
 import { ContactForm } from "@/components/sections/contact-form";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { Footer } from "@/components/sections/footer";
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <Products />
+        <Catalog />
         <Benefits />
         <CtaBanner />
         <ContactForm />

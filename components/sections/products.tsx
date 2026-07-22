@@ -35,7 +35,7 @@ export function Products() {
       <div className="mx-auto max-w-6xl">
         <FadeIn>
           <SectionHeading
-            eyebrow="Catálogo"
+            eyebrow="Categorías"
             title="Encuentra tu Apple ideal"
             description="Desde iPhones sellados hasta accesorios originales. Todos importados con los más altos estándares de calidad."
           />

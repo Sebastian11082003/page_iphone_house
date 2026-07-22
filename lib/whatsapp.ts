@@ -33,3 +33,16 @@ export function buildWhatsAppUrl(data: InquiryFormData): string {
   const text = encodeURIComponent(lines.join("\n"));
   return `https://wa.me/${CONTACT.whatsapp}?text=${text}`;
 }
+
+export function buildCatalogWhatsAppUrl(deviceLabel: string): string {
+  const text = encodeURIComponent(
+    [
+      "¡Hola! Vi el catálogo de iPhone House y me interesa este equipo:",
+      "",
+      `*Equipo:* ${deviceLabel}`,
+      "",
+      "¿Me confirmas disponibilidad, precio y formas de pago?",
+    ].join("\n")
+  );
+  return `https://wa.me/${CONTACT.whatsapp}?text=${text}`;
+}
